@@ -49,14 +49,17 @@ int main( int argc, char *argv[] ){
       sub_xval_array[i] = double(myPE + 1.5);
       // printf("myPE: %d, sub_xval_array[%d] = %f\n", myPE, i, sub_xval_array[i]);
       sub_yval_array[i] = lookupVal(int(m/4),x,y,sub_xval_array[i]);
-  //     printf("myPE: %d, sub_yval_array[%d] = %f\n", myPE, i, sub_yval_array[i]);
+      // printf("myPE: %d, sub_yval_array[%d] = %f\n", myPE, i, sub_yval_array[i]);
   }
   MPI_Gather(sub_yval_array, elems_per_proc, MPI_DOUBLE, 
             yval_array, elems_per_proc, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 
+  // print out the final result, which is gathered in PE 0 
   for (int i = 0; i < m; i++) {
+    if (myPE == 0) {
       printf("myPE: %d, yval_array[%d] = %f\n", myPE, i, yval_array[i]);
+    }
   }          
-
+  MPI_Finalize();
   return 0;
 }
