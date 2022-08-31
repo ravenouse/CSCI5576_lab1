@@ -32,24 +32,23 @@ int main( int argc, char *argv[] ){
   int m = 40; 
   double xval_array[m];
   double yval_array[m];
+  // estalish the values for the xval_array
+  if ( myPE == 0 ) {
+    for ( int i = 0 ; i < m ; ++i ) {  xval_array[i] = i;}
+  }
 
   // initialize the subarry for multiple processors
   // try with 4 processors
-  float elems_per_proc = m/4;
+  int elems_per_proc = m/4; //should be integer
   double sub_xval_array[int(elems_per_proc)];
   double sub_yval_array[int(elems_per_proc)];
 
   MPI_Scatter(xval_array, elems_per_proc, MPI_DOUBLE, 
               sub_xval_array, elems_per_proc, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-  MPI_Scatter(yval_array, elems_per_proc, MPI_DOUBLE, 
-              sub_yval_array, elems_per_proc, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 
   // call the lookup function 
   for (int i = 0; i < elems_per_proc; i++) {
-      sub_xval_array[i] = double(myPE + 1.5);
-      // printf("myPE: %d, sub_xval_array[%d] = %f\n", myPE, i, sub_xval_array[i]);
-      sub_yval_array[i] = lookupVal(int(m/4),x,y,sub_xval_array[i]);
-      // printf("myPE: %d, sub_yval_array[%d] = %f\n", myPE, i, sub_yval_array[i]);
+      sub_yval_array[i] = lookupVal(n,x,y,sub_xval_array[i], myPE);
   }
   MPI_Gather(sub_yval_array, elems_per_proc, MPI_DOUBLE, 
             yval_array, elems_per_proc, MPI_DOUBLE, 0, MPI_COMM_WORLD);

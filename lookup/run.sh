@@ -11,7 +11,6 @@ module load intel
 module load impi
 
 echo "== Run the job with four processes =="
-# echo "== Not sure if we need to include make=="
 make
 mpirun -np 4 ./main
 echo "== End of Job =="

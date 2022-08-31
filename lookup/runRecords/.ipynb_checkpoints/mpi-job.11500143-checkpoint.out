@@ -1,0 +1,87 @@
+== Run the job with four processes ==
+make: `main' is up to date.
+Hello, world from PE 1
+Hello, world from PE 2
+Hello, world from PE 3
+myPE: 3, sub_xval_array[0] = 30.000000, sub_yval_array[0] = -99.000000
+myPE: 3, sub_xval_array[1] = 31.000000, sub_yval_array[1] = -99.000000
+myPE: 3, sub_xval_array[2] = 32.000000, sub_yval_array[2] = -99.000000
+myPE: 3, sub_xval_array[3] = 33.000000, sub_yval_array[3] = -99.000000
+myPE: 3, sub_xval_array[4] = 34.000000, sub_yval_array[4] = -99.000000
+myPE: 3, sub_xval_array[5] = 35.000000, sub_yval_array[5] = -99.000000
+myPE: 3, sub_xval_array[6] = 36.000000, sub_yval_array[6] = -99.000000
+myPE: 3, sub_xval_array[7] = 37.000000, sub_yval_array[7] = -99.000000
+myPE: 3, sub_xval_array[8] = 38.000000, sub_yval_array[8] = -99.000000
+myPE: 3, sub_xval_array[9] = 39.000000, sub_yval_array[9] = -99.000000
+Hello, world from PE 0
+myPE: 0, sub_xval_array[0] = 0.000000, sub_yval_array[0] = 0.000000
+myPE: 0, sub_xval_array[1] = 1.000000, sub_yval_array[1] = 1.000000
+myPE: 0, sub_xval_array[2] = 2.000000, sub_yval_array[2] = 4.000000
+myPE: 0, sub_xval_array[3] = 3.000000, sub_yval_array[3] = 9.000000
+myPE: 0, sub_xval_array[4] = 4.000000, sub_yval_array[4] = 16.000000
+myPE: 0, sub_xval_array[5] = 5.000000, sub_yval_array[5] = 25.000000
+myPE: 0, sub_xval_array[6] = 6.000000, sub_yval_array[6] = 36.000000
+myPE: 0, sub_xval_array[7] = 7.000000, sub_yval_array[7] = 49.000000
+myPE: 0, sub_xval_array[8] = 8.000000, sub_yval_array[8] = 64.000000
+myPE: 0, sub_xval_array[9] = 9.000000, sub_yval_array[9] = 81.000000
+myPE: 2, sub_xval_array[0] = 20.000000, sub_yval_array[0] = -99.000000
+myPE: 2, sub_xval_array[1] = 21.000000, sub_yval_array[1] = -99.000000
+myPE: 2, sub_xval_array[2] = 22.000000, sub_yval_array[2] = -99.000000
+myPE: 2, sub_xval_array[3] = 23.000000, sub_yval_array[3] = -99.000000
+myPE: 2, sub_xval_array[4] = 24.000000, sub_yval_array[4] = -99.000000
+myPE: 2, sub_xval_array[5] = 25.000000, sub_yval_array[5] = -99.000000
+myPE: 2, sub_xval_array[6] = 26.000000, sub_yval_array[6] = -99.000000
+myPE: 2, sub_xval_array[7] = 27.000000, sub_yval_array[7] = -99.000000
+myPE: 2, sub_xval_array[8] = 28.000000, sub_yval_array[8] = -99.000000
+myPE: 2, sub_xval_array[9] = 29.000000, sub_yval_array[9] = -99.000000
+myPE: 1, sub_xval_array[0] = 10.000000, sub_yval_array[0] = -99.000000
+myPE: 1, sub_xval_array[1] = 11.000000, sub_yval_array[1] = -99.000000
+myPE: 1, sub_xval_array[2] = 12.000000, sub_yval_array[2] = -99.000000
+myPE: 1, sub_xval_array[3] = 13.000000, sub_yval_array[3] = -99.000000
+myPE: 1, sub_xval_array[4] = 14.000000, sub_yval_array[4] = -99.000000
+myPE: 1, sub_xval_array[5] = 15.000000, sub_yval_array[5] = -99.000000
+myPE: 1, sub_xval_array[6] = 16.000000, sub_yval_array[6] = -99.000000
+myPE: 1, sub_xval_array[7] = 17.000000, sub_yval_array[7] = -99.000000
+myPE: 1, sub_xval_array[8] = 18.000000, sub_yval_array[8] = -99.000000
+myPE: 1, sub_xval_array[9] = 19.000000, sub_yval_array[9] = -99.000000
+myPE: 0, yval_array[0] = 0.000000
+myPE: 0, yval_array[1] = 1.000000
+myPE: 0, yval_array[2] = 4.000000
+myPE: 0, yval_array[3] = 9.000000
+myPE: 0, yval_array[4] = 16.000000
+myPE: 0, yval_array[5] = 25.000000
+myPE: 0, yval_array[6] = 36.000000
+myPE: 0, yval_array[7] = 49.000000
+myPE: 0, yval_array[8] = 64.000000
+myPE: 0, yval_array[9] = 81.000000
+myPE: 0, yval_array[10] = -99.000000
+myPE: 0, yval_array[11] = -99.000000
+myPE: 0, yval_array[12] = -99.000000
+myPE: 0, yval_array[13] = -99.000000
+myPE: 0, yval_array[14] = -99.000000
+myPE: 0, yval_array[15] = -99.000000
+myPE: 0, yval_array[16] = -99.000000
+myPE: 0, yval_array[17] = -99.000000
+myPE: 0, yval_array[18] = -99.000000
+myPE: 0, yval_array[19] = -99.000000
+myPE: 0, yval_array[20] = -99.000000
+myPE: 0, yval_array[21] = -99.000000
+myPE: 0, yval_array[22] = -99.000000
+myPE: 0, yval_array[23] = -99.000000
+myPE: 0, yval_array[24] = -99.000000
+myPE: 0, yval_array[25] = -99.000000
+myPE: 0, yval_array[26] = -99.000000
+myPE: 0, yval_array[27] = -99.000000
+myPE: 0, yval_array[28] = -99.000000
+myPE: 0, yval_array[29] = -99.000000
+myPE: 0, yval_array[30] = -99.000000
+myPE: 0, yval_array[31] = -99.000000
+myPE: 0, yval_array[32] = -99.000000
+myPE: 0, yval_array[33] = -99.000000
+myPE: 0, yval_array[34] = -99.000000
+myPE: 0, yval_array[35] = -99.000000
+myPE: 0, yval_array[36] = -99.000000
+myPE: 0, yval_array[37] = -99.000000
+myPE: 0, yval_array[38] = -99.000000
+myPE: 0, yval_array[39] = -99.000000
+== End of Job ==
